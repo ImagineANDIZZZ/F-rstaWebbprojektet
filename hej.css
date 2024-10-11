@@ -1,13 +1,13 @@
 .container{
-display: grid;
-height: 100wh;
-grid-template-columns:repeat(6,1fr) ;
-grid-template-rows: .2fr 1fr 2fr 1fr;
-grid-template-areas:
-    "nav nav nav nav nav nav"
-    "header header header header header header"
-    "sidbar-left sidbar-left centerbar centerbar sidbar-right sidbar-right"
-    "footer footer footer footer footer-right footer-right";
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25px 70px 90px 1fr 2fr  1fr 25px;
+    grid-template-rows: .2fr 0.8fr 3fr 0.3fr;
+    grid-template-areas:
+    ". nav nav nav nav nav nav ."
+    ". header header header header header header ."
+    ". sidbar-left sidbar-left centerbar centerbar sidbar-right sidbar-right ."
+    ". footer footer footer footer footer footer .";
 }
 
 .navbar{
@@ -39,30 +39,26 @@ grid-template-areas:
 
 header{
     grid-area:header;
-    background-color: rgb(59, 33, 33);
+    background-color: #222;
 }
 header h1 {
     text-align: center;
 }
-#sidbar-left{
+#sidebar-left{
     grid-area: sidbar-left;
-    background-color: rgb(0, 255, 21);
+    background-color: #bbb;
 }
 
 #centerbar{
     grid-area: centerbar;
-    background-color: rgb(0, 17, 255);
+    background-color: #888;
 }
 
-#sidbar-right{
+#sidebar-right{
         grid-area: sidbar-right;
-        background-color: rgb(255, 0, 0);
+        background-color: #bbb;
 }
 #footer{
     grid-area: footer;
-    background-color: chartreuse;
-}
-#footer-right{
-    grid-area: footer-right;
-    background-color: rgb(25, 41, 9);
+    background-color: #aaa;
 }
