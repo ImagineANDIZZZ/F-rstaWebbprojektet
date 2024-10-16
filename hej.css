@@ -39,7 +39,7 @@
 
 header{
     grid-area:header;
-    background-color: #222;
+    background-color: #ddd;
 }
 header h1 {
     text-align: center;
@@ -51,7 +51,10 @@ header h1 {
 
 #centerbar{
     grid-area: centerbar;
-    background-color: #888;
+    background-color: #aaa;
+}
+#centerbar *{
+    padding-left: 10px;
 }
 
 #sidebar-right{
@@ -60,5 +63,5 @@ header h1 {
 }
 #footer{
     grid-area: footer;
-    background-color: #aaa;
+    background-color: #999;
 }
