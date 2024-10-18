@@ -65,3 +65,37 @@ header h1 {
     grid-area: footer;
     background-color: #999;
 }
+#box{
+    border: 1px solid rgb(182, 21, 21);
+    border-width: 70px;
+    margin: 10px;
+    border-color: rgb(71, 134, 71);
+    border-radius: 7px;
+}
+.flex-container-home{
+   
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+}
+.item{
+    width: 120px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border: 7px solid #6e6e6e;
+    margin: 10px;
+    border-radius: 17px;
+}
+#vitbild{
+    width: 400px;
+    height: 200px;
+    margin-top: 5%;
+    padding: 22px;
+}
+#vitbild2{
+    width: 120px;
+    height: 400px;
+    margin-top: 5%;
+    padding: 22px;
+}
