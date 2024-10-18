@@ -4,11 +4,12 @@
     grid-template-columns: 25px 70px 90px 1fr 2fr  1fr 25px;
     grid-template-rows: .2fr 0.8fr 3fr 0.3fr;
     grid-template-areas:
-    ". nav nav nav nav nav nav ."
-    ". header header header header header header ."
-    ". sidbar-left sidbar-left centerbar centerbar sidbar-right sidbar-right ."
-    ". footer footer footer footer footer footer .";
+    ". nav nav nav nav nav ."
+    ". header header header header header ."
+    ". sidbar-left sidbar-left centerbar centerbar sidbar-right ."
+    ". footer footer footer footer footer .";
 }
+
 
 .navbar{
     grid-area: nav;
@@ -48,7 +49,6 @@ header h1 {
     grid-area: sidbar-left;
     background-color: #bbb;
 }
-
 #centerbar{
     grid-area: centerbar;
     background-color: #aaa;
@@ -56,10 +56,9 @@ header h1 {
 #centerbar *{
     padding-left: 10px;
 }
-
 #sidebar-right{
-        grid-area: sidbar-right;
-        background-color: #bbb;
+    grid-area: sidbar-right;
+    background-color: #bbb;
 }
 #footer{
     grid-area: footer;
@@ -87,15 +86,33 @@ header h1 {
     margin: 10px;
     border-radius: 17px;
 }
-#vitbild{
+#fisk1{
     width: 400px;
     height: 200px;
     margin-top: 5%;
     padding: 22px;
 }
-#vitbild2{
-    width: 120px;
+.Enderman{
+    width: 178px;
     height: 400px;
     margin-top: 5%;
     padding: 22px;
+}
+#vita-saker {
+    display: flex;
+}
+#Produkter{
+    background-color: black;
+    font-style: italic;
+    color: white;
+}
+#Omoss{
+    background-color: black;
+    font-style: italic;
+    color: white;
+}
+#Kontaktaoss{
+    background-color: black;
+    font-style: italic;
+    color: white;
 }
