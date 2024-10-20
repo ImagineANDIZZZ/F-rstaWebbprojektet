@@ -6,15 +6,151 @@
     <title>Document</title>
     <link rel="stylesheet" href="hej.css">
 </head>
+<style>
+ .container_Omoss{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25px 1fr 1fr  1fr 25px;
+    grid-template-rows: .2fr 0.8fr 3fr 0.6fr;
+    grid-template-areas:
+    ". nav nav nav ."
+    ". header header header ."
+    ". centerbar centerbar sidbar-right ."
+    ". footer footer footer .";
+}
+.flex-container-produkter{
+   
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+#sidebar-right{
+    grid-area: sidbar-right;
+    background-color: #aaa;
+}
+table{
+    border-spacing: 0;
+    width: 20%;
+}
+thead{
+    background-color: rgb(100, 126, 151);
+    color: rgb(0, 0, 0);
+}
+tbody td:nth-child(3){
+    text-align: center;
+}
+tbody td:nth-child(2){
+    padding-left: 20px;
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+}
+th,td{
+    border: 2px solid black;
+    padding: 9px;
+}
+tbody tr:hover{
+    background-color: rgb(186, 216, 172);
+    transition: 1s;
+}
+img{
+    height: 80px;
+    width:120px;
+}
+#sidebar-right{
+    padding-left: 37.5px;
+}
+#dollar{
+    margin-top: 5%;
+    padding-left: 81.5px;
+    width: 320px;
+    height: 300px;
+}
+</style>
 <body id="Omoss">
-    <nav class="navbar">
-        <ul>
-            <li><a href="webbprojekt.html">Home</a></li>
-            <li><a href="Produkter.html">Produkter</a></li>
-            <li><a href="Omoss.html">Om oss</a></li>
-            <li><a href="Kontaktaoss.html">Kontakta oss</a></li>
-        </ul>
-    </nav>
-    qwertyuio
+    <div class="container_Omoss">
+        <header>
+            <h1>----------------Vilka är Alvins object----------------</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="webbprojekt.html">Home</a></li>
+                <li><a href="Produkter.html">Produkter</a></li>
+                <li><a href="Omoss.html">Om oss</a></li>
+                <li><a href="Kontaktaoss.html">Kontakta oss</a></li>
+            </ul>
+        </nav>
+        <aside id="sidebar-left">
+        </aside>
+        <main id="centerbar">
+            <h2>Om Alvin</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae rem qui eveniet sequi cupiditate ea maiores voluptatum totam vero aut, illum magnam tempora, possimus maxime omnis facilis, facere mollitia corrupti a pariatur. Soluta iure cupiditate eos tenetur culpa eveniet veritatis recusandae sit nihil aut voluptatem natus explicabo dicta suscipit quisquam perferendis, facilis tempora totam aliquam. Ut optio ullam veniam sed deleniti velit! Nihil exercitationem a dolore soluta laudantium? Soluta voluptas, autem veritatis assumenda ad odio suscipit placeat, eveniet fugit, aut et aspernatur tempore libero impedit? Sequi, possimus quo corporis architecto magnam, recusandae laborum nulla libero omnis optio repellendus, aliquam distinctio!</p>
+            <h2>Varför startades Alvins object?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum similique eius cupiditate molestiae, quis nam necessitatibus tempora aut, inventore omnis illo accusantium aperiam nemo temporibus impedit tenetur officia magni iste? Repellat, atque? Sed beatae error distinctio asperiores modi. Aut dignissimos debitis quod vero ducimus, hic nesciunt culpa vel aliquid cumque amet deserunt eaque impedit temporibus distinctio minima illo laudantium? Quasi, dolores, soluta eos excepturi fuga quis a adipisci ad quaerat ducimus similique cupiditate molestiae doloremque ea nulla! Voluptate asperiores aut atque deleniti sint ab ipsam nulla tempora, ex numquam cupiditate itaque veniam omnis at? Iusto incidunt rerum ut earum, possimus consequatur velit, sint aliquid eius quas maxime distinctio? Aut, odio. Exercitationem iusto consectetur aut, voluptate quos aliquid quod tempore voluptas corporis sint odit, cupiditate quia doloremque. Alias sunt facere repellendus necessitatibus accusantium obcaecati minus corporis quibusdam nam, consequuntur dolorum tempore nesciunt illum eos dolore rerum? Mollitia dolores consectetur nesciunt dignissimos laudantium dolorum nobis nisi sequi officiis explicabo fugiat rerum aperiam accusamus natus sed perspiciatis sint porro architecto omnis quam possimus eligendi, accusantium voluptatibus dolore. Nesciunt quia mollitia officiis sint cum quisquam omnis at quam possimus consequuntur alias assumenda nam earum, incidunt consectetur illum! Dignissimos, illum. Exercitationem dolor eaque rerum ex!</p>
+            <h2>Vår försäljning</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellendus ex quam qui temporibus doloremque quidem obcaecati, esse eius, sapiente, explicabo vitae! Modi veritatis deleniti adipisci aperiam ab placeat sapiente repudiandae culpa eaque. Sapiente provident recusandae reiciendis quis aperiam facilis harum voluptatibus modi suscipit aspernatur dolorum corporis unde sit obcaecati ipsam optio magnam, earum inventore doloribus quas dolor aut. Deserunt, esse. Ipsum fuga illum necessitatibus culpa amet ducimus rem magnam minima odio exercitationem voluptate, incidunt ab molestias ex eligendi quae. Sed sunt earum ad aliquid fuga impedit, numquam modi doloremque cum ea fugiat libero magnam magni quo repellat! Velit eos in voluptatem id ipsum! Voluptate, dolor et libero similique necessitatibus cupiditate deleniti repellendus, ab quisquam eveniet veritatis provident rem. Voluptates suscipit reiciendis aliquid odio mollitia obcaecati est illum temporibus, nisi, sunt minima recusandae hic! Ullam velit alias non, itaque quisquam earum hic blanditiis, optio iusto assumenda est laudantium facere accusamus odio modi suscipit expedita minima totam delectus repudiandae? Voluptate eaque vitae ea dolores corrupti quis est? Delectus, exercitationem voluptatem nostrum expedita quia quo placeat autem blanditiis eos repudiandae iusto libero.</p>
+        </main>
+        <aside id="sidebar-right">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Månader/ Försäljning</th>
+                        <th>Zebra</th>
+                        <th>Fågelholk</th>
+                        <th>Godis kålor</th>
+                        <th>Hemmagjord Hårgele</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Januari</td>
+                        <td>100,000</td>
+                        <td>78,000</td>
+                        <td>33,000</td>
+                        <td>230,000</td>
+                    </tr>
+                    <tr>
+                        <td>Februari</td>
+                        <td>60,000</td>
+                        <td>76,000</td>
+                        <td>28,000</td>
+                        <td>260,000</td>
+                    </tr>
+                    <tr>
+                        <td>Mars</td>
+                        <td>23,000</td>
+                        <td>92,500</td>
+                        <td>52,100</td>
+                        <td>190,000</td>
+                    </tr>
+                    <tr>
+                        <td>April</td>
+                        <td>190,000</td>
+                        <td>94,000</td>
+                        <td>70,000</td>
+                        <td>163,400</td>
+                    </tr>
+                    <tr>
+                        <td>Maj</td>
+                        <td>35,000</td>
+                        <td>103,900</td>
+                        <td>62,400</td>
+                        <td>270,000</td>
+                    </tr>
+                    <tr>
+                        <td>Juni</td>
+                        <td>10,000</td>
+                        <td>68,000</td>
+                        <td>50,000</td>
+                        <td>340,000</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+            <img id="dollar" src="dollar.png" alt="">
+        </aside>
+        <footer id="footer"></footer>
+    </div>
 </body>
 </html>

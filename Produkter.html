@@ -6,15 +6,100 @@
     <title>Document</title>
     <link rel="stylesheet" href="hej.css">
 </head>
+<style>
+    .container_produkter{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25px 1fr 1fr  1fr 25px;
+    grid-template-rows: .2fr 0.8fr 3fr 0.6fr;
+    grid-template-areas:
+    ". nav nav nav ."
+    ". header header header ."
+    ". centerbar centerbar sidbar-right ."
+    ". footer footer footer .";
+}
+.flex-container-produkter{
+   
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+  
+}
+.item-produkter{
+   width: 180px;
+   height: 308px;
+   background-color: rgb(255, 255, 255);
+   border: 7px solid #6e6e6e;
+   margin: 10px;
+   border-radius: 17px;
+   padding-inline: 20px;
+}
+#Zebra{
+    width: 180px;
+    height: 160px;
+}
+#Fågelholk{
+    width: 180px;
+    height: 160px;
+}
+#Kålor{
+    width: 180px;
+    height: 160px;
+}
+#hårgele{
+    width: 180px;
+    height: 160px;
+}
+
+</style>
 <body id="Produkter">
-    <nav class="navbar">
-        <ul>
-            <li><a href="webbprojekt.html">Home</a></li>
-            <li><a href="Produkter.html">Produkter</a></li>
-            <li><a href="Omoss.html">Om oss</a></li>
-            <li><a href="Kontaktaoss.html">Kontakta oss</a></li>
-        </ul>
-    </nav>
-    hjertghjjhugerjuhjhr
+   <div class="container_produkter">
+        <header>
+            <h1>----------------Vårat utbud----------------</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="webbprojekt.html">Home</a></li>
+                <li><a href="Produkter.html">Produkter</a></li>
+                <li><a href="Omoss.html">Om oss</a></li>
+                <li><a href="Kontaktaoss.html">Kontakta oss</a></li>
+            </ul>
+        </nav>
+        <main id="centerbar"> 
+            <h2>Produkt 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repudiandae et fugiat ipsum assumenda illo molestiae consequuntur! Quod dignissimos totam, ratione atque ducimus optio voluptate rem, quis quasi labore dolorem. Saepe porro voluptatum vitae, consequatur magni maiores commodi molestiae possimus, harum recusandae voluptate minus necessitatibus suscipit accusamus similique debitis. Porro, pariatur totam? Fugit distinctio consequuntur laborum dolor molestias necessitatibus temporibus, culpa repellat minus, hic quis quasi asperiores adipisci reprehenderit delectus eum commodi sequi ea deleniti debitis. Mollitia eum sequi totam magni hic veniam ipsam animi vel expedita eius. Enim nobis laudantium nulla sint quia ut, omnis inventore consectetur officia eos?</p>
+            <h2>Produkt 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique labore sit necessitatibus sunt, modi expedita, maxime fuga error non vitae alias, deleniti commodi aliquam nesciunt debitis eaque impedit. Alias praesentium quae accusantium porro dolorum ab ipsa. Inventore quibusdam nulla nisi animi, est assumenda, voluptatem nam voluptatibus enim magnam facere culpa consequatur impedit quas modi ad, illum dicta ullam? Laborum necessitatibus id iste, ullam neque nemo aliquid, laboriosam enim minima eveniet et perferendis! Odio veniam voluptates consectetur beatae necessitatibus repellendus praesentium facilis nisi libero sunt ad alias, voluptatem pariatur architecto sequi. Nemo, tempore quae cumque quia nobis harum ut perspiciatis.</p>
+            <h2>Produkt 3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, ipsa corporis aliquid nostrum, reiciendis earum consequatur cum recusandae modi tempora ullam architecto illo blanditiis inventore soluta ad porro eos magnam sint consectetur, cupiditate doloremque harum. Deserunt doloremque labore totam eius animi maiores ullam impedit odit minima magni laborum ab in similique cupiditate necessitatibus dignissimos, expedita suscipit fuga culpa reiciendis non repellat accusamus! Voluptatibus expedita quaerat nulla provident, aperiam corporis dolorum ullam earum veniam minima perspiciatis maiores quam soluta officiis molestiae illo voluptas dicta nisi nostrum laudantium exercitationem deserunt eveniet temporibus optio. Non fuga doloremque corporis quia, architecto dolore dolorem in.</p>
+            <h2>Produkt 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloremque natus amet! Veniam deleniti voluptates rem! Alias ratione esse voluptate quas corrupti deleniti assumenda accusantium? Ipsum eveniet voluptatem quibusdam expedita vero cupiditate nostrum omnis odio libero ipsam qui vel minima consequatur, atque, perferendis ad, quia aperiam. Ut placeat fugiat, facilis at qui possimus. Sint nostrum, voluptatem blanditiis itaque consequuntur dicta pariatur iusto dolore officia voluptates nulla incidunt impedit sequi sit, vel est eius fugiat exercitationem, cupiditate corrupti fuga quia quos! Magnam quo quis voluptatem aliquid officiis nemo, delectus temporibus veniam cumque nostrum nobis minus atque illum, consequatur aspernatur facere dolor./p>
+        </main>
+        <aside id="sidebar-right">
+            <div class="flex-container-produkter">
+                <div class="item-produkter">
+                    <h4>Produkt 1</h4>
+                    <h4>Alvins Zebra</h4>
+                    <img id="Zebra" src="Zebra.jpg" alt="">
+                     </div>
+                <div class="item-produkter">
+                    <h4>Produkt 2</h4>
+                    <h4>Alvins Fågelholk</h4>
+                    <img id="Fågelholk" src="Fågelholk.jpg" alt="">
+                     </div> 
+                <div class="item-produkter">
+                    <h4>Produkt 3</h4>
+                    <h4>Alvins Godis kålor</h4>
+                    <img id="Kålor" src="kålor.jpg" alt="">
+                     </div> 
+                <div class="item-produkter">
+                    <h4>Produkt 4</h4>
+                    <h4>Alvins hemmagjorda hårgele</h4>
+                    <img id="hårgele" src="hårgele.jpg" alt="">
+                     </div> 
+            </div>
+        </aside>
+        <footer id="footer"></footer>
+    </div>
 </body>
 </html>
