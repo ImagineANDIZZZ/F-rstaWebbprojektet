@@ -87,19 +87,19 @@ header h1 {
     border-radius: 17px;
     padding-inline: 10px;
 }
-#fisk1{
+#blåguld{
     width: 400px;
     height: 200px;
     margin-top: 5%;
     padding: 22px;
 }
-.Enderman{
+.mönster{
     width: 178px;
     height: 400px;
     margin-top: 5%;
     padding: 22px;
 }
-#vita-saker {
+#mönster-bilder {
     display: flex;
 }
 
